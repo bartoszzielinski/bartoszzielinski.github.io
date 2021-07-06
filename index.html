@@ -2,10 +2,9 @@
   <head>
     <title>Bartosz Zieliński, Ph.D.</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />    
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
   </head>
-
 
   <body>
     <div class="row">
@@ -42,7 +41,10 @@
       
       <div class="col-md-8">
           <h2>Short bio</h2>
-          <include src="https://bartoszzielinski.github.io/short_bio.html"></include>
+          <div w3-include-html="https://bartoszzielinski.github.io/short_bio.html"></div>
+          <script>
+            w3IncludeHTML();
+          </script>
         <hr>
           TODO
       </div>
