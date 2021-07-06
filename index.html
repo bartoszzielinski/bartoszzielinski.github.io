@@ -4,8 +4,14 @@
     <title>Bartosz Zieliński, Ph.D.</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#short_bio").load("short_bio.html");
+    });
+    </script>
   </head>
-  <script src="http://www.w3schools.com/lib/w3data.js"></script>
 
   <body>
     <div class="row">
@@ -42,10 +48,7 @@
       
       <div class="col-md-8">
           <h2>Short bio</h2>
-          <div w3-include-html="short_bio.html"></div>
-          <script>
-            w3IncludeHTML();
-          </script>
+          <div id="short_bio"></div>
         <hr>
           TODO
       </div>
