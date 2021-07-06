@@ -9,7 +9,7 @@
     <script>
     $(document).ready(function(){
       $("#short_bio").load("short_bio.html");
-      $("#content").load("cv.html");
+      $("#content").load($.QueryString["page"] + ".html");
     });
     </script>
   </head>
