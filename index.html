@@ -12,12 +12,12 @@
 
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
-      const page = urlParams.get('page');
-      if (page == '') {
-        $("#content").load("pubs.html");
+      if (urlParams.has('page')) {
+        const page = urlParams.get('page');
+        $("#content").load(page.concat(".html"));
       }
       else {
-        $("#content").load(page.concat(".html"));
+        $("#content").load("pubs.html");
       }
     });
     </script>
