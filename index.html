@@ -9,7 +9,12 @@
     <script>
     $(document).ready(function(){
       $("#short_bio").load("short_bio.html");
-      $("#content").load($.get["page"].concat(".html"));
+
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const page = urlParams.get('page');
+      console.log(page);
+      $("#content").load(page.concat(".html"));
     });
     </script>
   </head>
