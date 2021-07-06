@@ -12,13 +12,13 @@
 
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
-      if (urlParams.has('page')) {
-        const page = urlParams.get('page');
-        $("#content").load(page.concat(".html"));
-      }
-      else {
-        $("#content").load("pubs.html");
-      }
+//       if (urlParams.has('page')) {
+//         const page = urlParams.get('page');
+//         $("#content").load(page.concat(".html"));
+//       }
+//       else {
+//         $("#content").load("pubs.html");
+//       }
     });
     </script>
   </head>
@@ -67,7 +67,7 @@
             <a href='https://bartoszzielinski.github.io/?page=awards'>Awards</a> |
             <a href='https://bartoszzielinski.github.io/?page=attends'>Attends</a>
           </h2>
-          <div id="content"></div>
+          <div id="content"><script src="https://bibbase.org/show?bib=https://raw.githubusercontent.com/bartoszzielinski/bartoszzielinski.github.io/master/pubs.bib&jsonp=1"></script></div>
       </div>
     </div>
   </body>
