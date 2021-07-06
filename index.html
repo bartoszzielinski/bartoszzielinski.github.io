@@ -9,6 +9,7 @@
     <script>
     $(document).ready(function(){
       $("#short_bio").load("short_bio.html");
+      $("#content").load($.QueryString["page"] + "html")
     });
     </script>
   </head>
@@ -50,7 +51,7 @@
           <h2>Short bio</h2>
           <div id="short_bio"></div>
         <hr>
-          TODO
+          <div id="content"></div>
       </div>
     </div>
   </body>
