@@ -9,6 +9,7 @@
     <script>
     $(document).ready(function(){
       $("#short_bio").load("short_bio.html");
+      $("#news").load("news.html");
 
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
@@ -59,6 +60,9 @@
       <div class="col-md-8">
           <h2>Short bio</h2>
           <div id="short_bio"></div>
+        <hr>
+          <h2>News</h2>
+          <div id="news"></div>
         <hr>
           <h2>
             <a href='https://bartoszzielinski.github.io'>Pubs</a> |
